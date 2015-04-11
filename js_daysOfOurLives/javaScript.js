@@ -63,9 +63,11 @@ listDays.shift();
 // Create a variable sortDay that Sort the days
 var sortDay = days.sort();
 
+var htmlText = document.getElementById("input");
+
 // Using FOR loop just grab the index of the array
 for(var i = 0; i < days.length; i++) {
-	console.log(sortDay[i]);
+	htmlText.innerHTML += "<li>" + sortDay[i] + "</li>";
 }
 
 
